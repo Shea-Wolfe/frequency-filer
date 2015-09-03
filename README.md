@@ -1,5 +1,5 @@
 ## Getting Started
-* to run test in command line use $ python word_frequency_test
+* to run test in command line use $ python word_frequency_test.py
 * to run program in command line use $ python copy word_frequency.py
 
 ## The program
