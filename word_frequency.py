@@ -8,10 +8,12 @@ def word_frequency(text):
     #word_list splits the string into a list words
     word_count = {} #a dictionary to put our counts in
     for word in word_list:
-        word_count[word] =  word_list.count(word)
-        #looks at every word in our list and sets it as
-        #a key with a value equal to the count of that word
-        #in the the list.  duplicates are overwritten.
+        if word in word_count:
+            word_count[word] += 1
+            #optimized so that we don't have to count our entire
+            #file on every step.  Speeds up call speed by a lot.
+        else:
+            word_count[word] = 1
     return word_count
 
 def sorted_frequency(dictionary):
