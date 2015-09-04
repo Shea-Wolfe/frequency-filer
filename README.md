@@ -2,6 +2,7 @@
 * To run test in command line use $ python word_frequency_test.py.
 * To run word_frequency in command line use $ python word_frequency.py.  This program requires a file named sample.txt to be present in the same directory.
 * To run hard_word_frequency in command line use $ python hard_word_frequency file_to_be_opened.txt.
+* To run nightmare_mode_word_frequency in command line use $ python nightmare_mode_word_frequency file_to_be_opened.txt.
 
 ## The programs
 word_frequency will open an outside file in the same directory named sample.txt and print pairings of the 20 most common words in sample.txt and how many times they are used to standard output.
@@ -11,6 +12,8 @@ word_frequency_tests checks the word_frequency() function in word_frequency.py a
 sample.txt is a file to be input into our word_frequency function.
 
 hard_word_frequency will open the text file indicated after you call hard_word_frequency and print out the 20 most common words excluding the words found below.
+
+nightmare_mode_word_frequency will open the text file indicated after you call it and print out a text based histogram to represent the count of the 20 most common words.  graph is capped at 50 and if a word occurs over 50 times the entire graph is scaled so the most common word has 50 #'s and the rest of the counts are normalized appropriately.  All normalized counts are trucated for simplicity.  Excludes a list of common words found below.
 
 excluded words:
 ['a','able','about','across','after','all','almost','also','am','among','an','and','any','are','as','at','be',
